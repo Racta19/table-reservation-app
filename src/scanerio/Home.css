@@ -1,0 +1,93 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #495E57;
+    padding: 4rem;
+}
+
+.heroColumn1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 10rem;
+}
+
+.heroColumn1 h2 {
+    font-size: 64px;
+    font-weight: initial;
+    color: #F4CE14;
+}
+
+.heroColumn1 h4 {
+    font-size: 54px;
+    font-weight: initial;
+    color: #F4CE14;
+    padding-bottom: 3rem;
+}
+
+.heroColumn1 p {
+    font-size: 16px;
+    font-weight: initial;
+    line-height: 1.5;
+    color: #FFFFFF;
+    padding-right: 15rem;
+    padding-bottom: 17rem;
+    max-width: 800px;
+}
+
+.heroColumn2 {
+    display: flex;
+    flex: 1;
+}
+
+.heroColumn2 img {
+    width: 375px;
+    height: auto;
+}
+
+.button-primary {
+    max-width: 200px;
+    max-height: 60px;
+    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+    background: #F4CE14;
+    border: none;
+    color: #000000;
+    padding: 1rem;
+}
+
+.button-primary:hover {
+    background-color: #FFFFFF;
+    color: #495E57;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlightHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.cardBox {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7rem;
+}
+
+.dashboard ul {
+    list-style: none;
+    font-weight: bold;
+}
