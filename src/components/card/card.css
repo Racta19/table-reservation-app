@@ -1,7 +1,8 @@
 .card{
     width: 300px;
-    border: 1px solid #ccc;
     border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card img {
@@ -32,4 +33,12 @@
     margin-top: 8px;
     font-size: 14px;
     padding: 0.5rem;
+}
+
+@media screen and (max-width: 1050px){
+    .card{
+        padding-bottom: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
 }

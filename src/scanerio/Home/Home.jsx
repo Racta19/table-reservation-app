@@ -1,11 +1,11 @@
 import React from 'react'
 
-import heroFood from "../assets/restauranfood.jpg"
-import cardPic1 from "../assets/greek salad.jpg"
-import cardPic2 from "../assets/bruchetta.svg"
-import cardPic3 from "../assets/lemon dessert.jpg"
 
-import Card from "../components/card"
+import cardPic1 from "../../assets/greek salad.jpg"
+import cardPic2 from "../../assets/bruchetta.svg"
+import cardPic3 from "../../assets/lemon dessert.jpg"
+
+import Card from "../../components/card/card"
 import './Home.css'
 
 const cardData = [
@@ -35,17 +35,7 @@ const cardData = [
 const Home = () => {
   return (
       <div className="App">
-          <section className="hero">
-              <div className="heroColumn1">
-                  <h2>Little Lemon </h2>
-                  <h4>Chicago</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <button className="button-primary" type="submit">Reserve a Table</button>
-              </div>
-              <div className="heroColumn2">
-                  <img src={heroFood} alt='heroPic' />
-              </div>
-          </section>
+
           <section className="highlight">
               <div className="highlightHeading">
                   <h3>Specials</h3>
@@ -60,7 +50,7 @@ const Home = () => {
                       })
                   }
               </div>
-          </section>       
+          </section>
       </div>
   )
 }

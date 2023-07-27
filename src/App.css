@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
+  text-decoration: none;
 }
 
 .container {
@@ -13,7 +14,7 @@
   padding: 1.5rem 4rem;
 }
 
-.link{
+.link {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -28,7 +29,7 @@
   cursor: pointer;
 }
 
-.navLink{
+.navLink {
   margin: 1rem;
   cursor: pointer;
   font-weight: bold;
@@ -38,10 +39,100 @@
   padding: 0.5rem;
   transition: none;
   transform: scale(1);
-  border-bottom: 1px solid #fff ;
+  border-bottom: 1px solid #fff;
 }
 
 a:hover {
   border-bottom: 1px solid #495E57;
   color: #495E57;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.hamburgerMenucontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: end;
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.button-primary {
+  max-width: 200px;
+  max-height: 60px;
+  font-size: large;
+  font-style: normal;
+  font-weight: bold;
+  background: #F4CE14;
+  border: none;
+  color: #000000;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-primary:hover {
+  background-color: #ee9972;
+  color: #495E57;
+}
+
+.button-secondary {
+  max-width: 200px;
+  max-height: 60px;
+  font-size: large;
+  font-style: normal;
+  font-weight: bold;
+  background: #ee9972;
+  border: none;
+  border-radius: 16px;
+  color: #edefee;
+  padding: 1rem;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  background-color: #F4CE14;
+  color: #495E57;
+}
+
+@media screen and (max-width: 1050px) {
+  .link {
+    display: none;
+  }
+
+  .navLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 1rem;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .basket {
+    position: absolute;
+    right: 3rem;
+    /* Adjust this value to move the basket more to the right */
+    right: 10%;
+    transform: translateX(-10%);
+  }
 }
